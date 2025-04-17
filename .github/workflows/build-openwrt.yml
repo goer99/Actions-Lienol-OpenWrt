@@ -35,8 +35,7 @@ env:
 #  CONFIG_FILE: x86.config
   REPO_URL: https://github.com/Lienol/openwrt
   REPO_BRANCH: 19.07
-  CONFIG_FILE: my_lede.config
-  
+  CONFIG_FILE: my_lede.config  
   DIY_SH: diy.sh
   FREE_UP_DISK: false
   SSH_ACTIONS: false
