@@ -13,11 +13,11 @@ name: build lienol openwert
 on:
   repository_dispatch:
   workflow_dispatch:
-    inputs:
-      ssh:
-        description: 'SSH connection to Actions'
-        required: false
-        default: 'false'
+#    inputs:
+#      ssh:
+#        description: 'SSH connection to Actions'
+#        required: false
+#        default: 'false'
   push:
     branches:
       - lienol-openwrt
@@ -34,8 +34,8 @@ env:
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: my_lede.config
   DIY_P1_SH: diy.sh
-#  DIY_P2_SH: diy-part2.sh
-#  UPLOAD_BIN_DIR: true
+  DIY_P2_SH: diy-part2.sh
+  UPLOAD_BIN_DIR: true
   UPLOAD_FIRMWARE: true
 #  UPLOAD_COWTRANSFER: true
 #  UPLOAD_WETRANSFER: true
